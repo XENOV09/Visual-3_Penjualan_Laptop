@@ -6,7 +6,8 @@ uses
   FrUtama in 'FrUtama.pas' {FUtama},
   FrSupplier in 'FrSupplier.pas' {FSupplier},
   FrKaryawan in 'FrKaryawan.pas' {FKaryawan},
-  FrUser in 'FrUser.pas' {FUser};
+  FrUser in 'FrUser.pas' {FUser},
+  FrPelanggan in 'FrPelanggan.pas' {FPelanggan};
 
 {$R *.res}
 
@@ -17,5 +18,6 @@ begin
   Application.CreateForm(TFSupplier, FSupplier);
   Application.CreateForm(TFLogin, FLogin);
   Application.CreateForm(TFUser, FUser);
+  Application.CreateForm(TFPelanggan, FPelanggan);
   Application.Run;
 end.

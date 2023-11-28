@@ -1,9 +1,9 @@
-object FSupplier: TFSupplier
-  Left = 606
-  Top = 196
-  Width = 938
-  Height = 343
-  Caption = 'FSupplier'
+object FPelanggan: TFPelanggan
+  Left = 213
+  Top = 216
+  Width = 1050
+  Height = 364
+  Caption = 'FPelanggan'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,104 +14,122 @@ object FSupplier: TFSupplier
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 16
+    Left = 40
     Top = 24
-    Width = 52
+    Width = 64
     Height = 13
-    Caption = 'ID Supplier'
+    Caption = 'ID Pelanggan'
   end
   object Label2: TLabel
-    Left = 16
+    Left = 40
     Top = 56
-    Width = 68
+    Width = 80
     Height = 13
-    Caption = 'Nama Supplier'
+    Caption = 'Nama Pelanggan'
   end
   object Label3: TLabel
-    Left = 16
+    Left = 40
     Top = 88
+    Width = 63
+    Height = 13
+    Caption = 'Jenis Kelamin'
+  end
+  object Label4: TLabel
+    Left = 40
+    Top = 120
+    Width = 36
+    Height = 13
+    Caption = 'No Telp'
+  end
+  object Label5: TLabel
+    Left = 40
+    Top = 152
     Width = 33
     Height = 13
     Caption = 'Alamat'
   end
-  object Label4: TLabel
-    Left = 16
-    Top = 120
-    Width = 32
-    Height = 13
-    Caption = 'Telpon'
-  end
-  object id: TEdit
-    Left = 120
+  object Edit1: TEdit
+    Left = 176
     Top = 24
     Width = 121
     Height = 21
     TabOrder = 0
   end
-  object nama: TEdit
-    Left = 120
+  object Edit2: TEdit
+    Left = 176
     Top = 56
     Width = 121
     Height = 21
     TabOrder = 1
   end
-  object alamat: TEdit
-    Left = 120
-    Top = 88
+  object Edit3: TEdit
+    Left = 176
+    Top = 120
     Width = 121
     Height = 21
     TabOrder = 2
   end
-  object telp: TEdit
-    Left = 120
-    Top = 120
+  object Edit4: TEdit
+    Left = 176
+    Top = 152
     Width = 121
     Height = 21
     TabOrder = 3
   end
+  object Cmb1: TComboBox
+    Left = 176
+    Top = 88
+    Width = 121
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 4
+    Items.Strings = (
+      'L'
+      'P')
+  end
   object Button1: TButton
-    Left = 16
-    Top = 160
+    Left = 32
+    Top = 184
     Width = 75
     Height = 25
     Caption = 'Simpan'
-    TabOrder = 4
+    TabOrder = 5
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 104
-    Top = 160
+    Left = 120
+    Top = 184
     Width = 75
     Height = 25
     Caption = 'Edit'
-    TabOrder = 5
+    TabOrder = 6
     OnClick = Button2Click
   end
   object Button3: TButton
-    Left = 192
-    Top = 160
+    Left = 208
+    Top = 184
     Width = 75
     Height = 25
     Caption = 'Hapus'
-    TabOrder = 6
+    TabOrder = 7
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 280
-    Top = 160
+    Left = 296
+    Top = 184
     Width = 75
     Height = 25
     Caption = 'Cetak'
-    TabOrder = 7
+    TabOrder = 8
     OnClick = Button4Click
   end
   object DBGrid1: TDBGrid
-    Left = 376
-    Top = 16
-    Width = 537
-    Height = 169
+    Left = 400
+    Top = 8
+    Width = 489
+    Height = 200
     DataSource = DS1
-    TabOrder = 8
+    TabOrder = 9
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
@@ -132,30 +150,30 @@ object FSupplier: TFSupplier
     LibraryLocation = 
       'C:\Users\Novriyan09\Documents\Visual 3\Penjualan Laptop\libmysql' +
       '.dll'
-    Left = 24
-    Top = 200
+    Left = 32
+    Top = 224
   end
   object ZQ: TZQuery
     Connection = ZCon
     Active = True
     SQL.Strings = (
-      'select * from supplier')
+      'select * from pelanggan')
     Params = <>
-    Left = 72
-    Top = 200
+    Left = 80
+    Top = 224
   end
   object DS1: TDataSource
     DataSet = ZQ
-    Left = 120
-    Top = 200
+    Left = 128
+    Top = 224
   end
   object frxDBDataset1: TfrxDBDataset
     UserName = 'frxDBDataset1'
     CloseDataSource = False
     DataSet = ZQ
     BCDToCurrency = False
-    Left = 24
-    Top = 248
+    Left = 32
+    Top = 272
   end
   object frxReport1: TfrxReport
     Version = '4.12.6'
@@ -166,14 +184,14 @@ object FSupplier: TFSupplier
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45115.654411006900000000
-    ReportOptions.LastChange = 45258.748646585650000000
+    ReportOptions.LastChange = 45258.748646585600000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
       ''
       'end.')
-    Left = 120
-    Top = 248
+    Left = 128
+    Top = 272
     Datasets = <
       item
         DataSet = frxDBDataset1
@@ -250,7 +268,7 @@ object FSupplier: TFSupplier
           Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
-            'NAMA')
+            'USERNAME')
           ParentFont = False
         end
         object Memo10: TfrxMemoView
@@ -268,25 +286,7 @@ object FSupplier: TFSupplier
           Font.Style = [fsBold]
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
-            'ALAMAT')
-          ParentFont = False
-        end
-        object Memo11: TfrxMemoView
-          Left = 272.126160000000000000
-          Top = 3.779530000000000000
-          Width = 94.488250000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -11
-          Font.Name = 'Arial'
-          Font.Style = [fsBold]
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          Memo.UTF8 = (
-            'TELP')
+            'PASSWORD')
           ParentFont = False
         end
       end
@@ -302,7 +302,7 @@ object FSupplier: TFSupplier
           Width = 75.590600000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'id_supplier'
+          DataField = 'id_user'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -312,7 +312,7 @@ object FSupplier: TFSupplier
           Font.Style = []
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
-            '[frxDBDataset1."id_supplier"]')
+            '[frxDBDataset1."id_user"]')
           ParentFont = False
         end
         object Memo2: TfrxMemoView
@@ -320,7 +320,7 @@ object FSupplier: TFSupplier
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'nm_supplier'
+          DataField = 'username'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -330,7 +330,7 @@ object FSupplier: TFSupplier
           Font.Style = []
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
-            '[frxDBDataset1."nm_supplier"]')
+            '[frxDBDataset1."username"]')
           ParentFont = False
         end
         object Memo3: TfrxMemoView
@@ -338,7 +338,7 @@ object FSupplier: TFSupplier
           Width = 94.488250000000000000
           Height = 18.897650000000000000
           ShowHint = False
-          DataField = 'alamat'
+          DataField = 'password'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
           Font.Charset = DEFAULT_CHARSET
@@ -348,25 +348,7 @@ object FSupplier: TFSupplier
           Font.Style = []
           Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
-            '[frxDBDataset1."alamat"]')
-          ParentFont = False
-        end
-        object Memo4: TfrxMemoView
-          Left = 272.126160000000000000
-          Width = 94.488250000000000000
-          Height = 18.897650000000000000
-          ShowHint = False
-          DataField = 'telp'
-          DataSet = frxDBDataset1
-          DataSetName = 'frxDBDataset1'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clBlack
-          Font.Height = -13
-          Font.Name = 'Arial'
-          Font.Style = []
-          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
-          Memo.UTF8 = (
-            '[frxDBDataset1."telp"]')
+            '[frxDBDataset1."password"]')
           ParentFont = False
         end
       end

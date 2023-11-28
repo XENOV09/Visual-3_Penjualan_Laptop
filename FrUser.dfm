@@ -1,6 +1,6 @@
 object FUser: TFUser
-  Left = 192
-  Top = 125
+  Left = 602
+  Top = 107
   Width = 971
   Height = 196
   Caption = 'FUser'
