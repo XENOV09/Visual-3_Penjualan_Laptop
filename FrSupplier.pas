@@ -26,10 +26,12 @@ type
     DS1: TDataSource;
     DBGrid1: TDBGrid;
     frxDBDataset1: TfrxDBDataset;
+    frxReport1: TfrxReport;
     procedure Button1Click(Sender: TObject);
     procedure DBGrid1CellClick(Column: TColumn);
     procedure Button2Click(Sender: TObject);
     procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -99,6 +101,11 @@ begin
   ZQ.SQL.Add('select * from supplier');
   ZQ.Open;
   ShowMessage('DATA BERHASIL DIHAPUS..');
+end;
+
+procedure TFSupplier.Button4Click(Sender: TObject);
+begin
+  frxReport1.ShowReport();
 end;
 
 end.
