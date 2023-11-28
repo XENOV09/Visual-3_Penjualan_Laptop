@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TfrxReport Version="4.12.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="45258.7451353588" ReportOptions.Description.Text="" ReportOptions.LastChange="45258.7540046296" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end." PropData="044C656674025003546F7003B00108446174617365747301010C3400000020446174615365743D22667278444244617461736574312220446174615365744E616D653D2266727844424461746173657431220000095661726961626C65730100055374796C650100">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="215.9" PaperHeight="279.4" PaperSize="1" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" Description="as" Height="64.25201" Left="0" Top="18.89765" Width="740.409927">
+      <TfrxMemoView Name="Memo1" Left="15.11812" Top="0" Width="714.33117" Height="64.25201" ShowHint="False" Font.Charset="1" Font.Color="0" Font.Height="-48" Font.Name="Arial" Font.Style="1" ParentFont="False" Text="LAPORAN DATA KARYAWAN"/>
+    </TfrxReportTitle>
+    <TfrxPageHeader Name="PageHeader1" Height="18.89765" Left="0" Top="105.82684" Width="740.409927">
+      <TfrxMemoView Name="Memo2" Left="3.77953" Top="0" Width="75.5906" Height="18.89765" ShowHint="False" Text="ID Karyawan"/>
+      <TfrxMemoView Name="Memo3" Left="79.37013" Top="0" Width="75.5906" Height="18.89765" ShowHint="False" Text="ID User"/>
+      <TfrxMemoView Name="Memo4" Left="154.96073" Top="0" Width="75.5906" Height="18.89765" ShowHint="False" Text="NIK"/>
+      <TfrxMemoView Name="Memo5" Left="230.55133" Top="0" Width="241.88992" Height="18.89765" ShowHint="False" Text="NAMA"/>
+      <TfrxMemoView Name="Memo6" Left="472.44125" Top="0" Width="79.37013" Height="18.89765" ShowHint="False" Text="Jenis Kelamin"/>
+      <TfrxMemoView Name="Memo7" Left="551.81138" Top="0" Width="75.5906" Height="18.89765" ShowHint="False" Text="Tanggal Lahir"/>
+    </TfrxPageHeader>
+    <TfrxMasterData Name="MasterData1" Height="22.67718" Left="0" Top="185.19697" Width="740.409927" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" RowCount="0">
+      <TfrxMemoView Name="frxDBDataset1id_karyawan" Left="0" Top="0" Width="79.37013" Height="18.89765" ShowHint="False" DataField="id_karyawan" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;id_karyawan&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1id_user" Left="79.37013" Top="0" Width="79.37013" Height="18.89765" ShowHint="False" DataField="id_user" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;id_user&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1nik" Left="158.74026" Top="0" Width="79.37013" Height="18.89765" ShowHint="False" DataField="nik" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;nik&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1nama" Left="238.11039" Top="0" Width="234.33086" Height="18.89765" ShowHint="False" DataField="nama" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;nama&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1jk" Left="472.44125" Top="0" Width="79.37013" Height="18.89765" ShowHint="False" DataField="jk" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;jk&#34;]"/>
+      <TfrxMemoView Name="frxDBDataset1tgl_lahir" Left="551.81138" Top="0" Width="79.37013" Height="18.89765" ShowHint="False" DataField="tgl_lahir" DataSet="frxDBDataset1" DataSetName="frxDBDataset1" Text="[frxDBDataset1.&#34;tgl_lahir&#34;]"/>
+    </TfrxMasterData>
+  </TfrxReportPage>
+</TfrxReport>

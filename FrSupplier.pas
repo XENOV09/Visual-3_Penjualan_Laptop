@@ -82,7 +82,7 @@ end;
 procedure TFSupplier.Button2Click(Sender: TObject);
 begin
 ZQ.SQL.Clear;
-  ZQ.SQL.Add('update supplier set id_supplier="'+id.Text+'", nm_supplier	="'+nama.Text+'", alamat="'+alamat.Text+'", telp="'+telp.Text+'"  where id_supplier="'+id.Text+'"');
+  ZQ.SQL.Add('update supplier set id_supplier="'+id.Text+'", nm_supplier="'+nama.Text+'", alamat="'+alamat.Text+'", telp="'+telp.Text+'"  where id_supplier="'+id.Text+'"');
   ZQ.ExecSQL;
 
   ZQ.SQL.Clear;

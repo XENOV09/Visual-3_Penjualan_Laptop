@@ -11,7 +11,9 @@ type
     MainMenu1: TMainMenu;
     K1: TMenuItem;
     Supplier1: TMenuItem;
+    Karyawan1: TMenuItem;
     procedure Supplier1Click(Sender: TObject);
+    procedure Karyawan1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,13 +25,18 @@ var
 
 implementation
 
-uses FrSupplier;
+uses FrSupplier, FrKaryawan;
 
 {$R *.dfm}
 
 procedure TFUtama.Supplier1Click(Sender: TObject);
 begin
 FSupplier.showmodal;
+end;
+
+procedure TFUtama.Karyawan1Click(Sender: TObject);
+begin
+FKaryawan.showmodal;
 end;
 
 end.

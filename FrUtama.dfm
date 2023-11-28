@@ -23,6 +23,10 @@ object FUtama: TFUtama
         Caption = 'Supplier'
         OnClick = Supplier1Click
       end
+      object Karyawan1: TMenuItem
+        Caption = 'Karyawan'
+        OnClick = Karyawan1Click
+      end
     end
   end
 end
