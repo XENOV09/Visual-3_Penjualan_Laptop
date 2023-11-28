@@ -14,10 +14,12 @@ type
     Karyawan1: TMenuItem;
     User1: TMenuItem;
     Pelanggan1: TMenuItem;
+    Laptop1: TMenuItem;
     procedure Supplier1Click(Sender: TObject);
     procedure Karyawan1Click(Sender: TObject);
     procedure User1Click(Sender: TObject);
     procedure Pelanggan1Click(Sender: TObject);
+    procedure Laptop1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -29,7 +31,7 @@ var
 
 implementation
 
-uses FrSupplier, FrKaryawan, FrUser, FrPelanggan;
+uses FrSupplier, FrKaryawan, FrUser, FrPelanggan, FrLaptop;
 
 {$R *.dfm}
 
@@ -51,6 +53,11 @@ end;
 procedure TFUtama.Pelanggan1Click(Sender: TObject);
 begin
 FPelanggan.showmodal;
+end;
+
+procedure TFUtama.Laptop1Click(Sender: TObject);
+begin
+FLaptop.showmodal;
 end;
 
 end.

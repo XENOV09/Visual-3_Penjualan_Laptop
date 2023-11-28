@@ -1,6 +1,6 @@
 object FKaryawan: TFKaryawan
-  Left = 245
-  Top = 169
+  Left = 208
+  Top = 238
   Width = 1044
   Height = 540
   Caption = 'FKaryawan'
@@ -282,7 +282,7 @@ object FKaryawan: TFKaryawan
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45258.745135358800000000
-    ReportOptions.LastChange = 45258.754004629600000000
+    ReportOptions.LastChange = 45258.826379120400000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -366,7 +366,7 @@ object FKaryawan: TFKaryawan
             'NAMA')
         end
         object Memo6: TfrxMemoView
-          Left = 464.882190000000000000
+          Left = 472.441250000000000000
           Width = 86.929190000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -374,7 +374,7 @@ object FKaryawan: TFKaryawan
             'Jenis Kelamin')
         end
         object Memo7: TfrxMemoView
-          Left = 563.149970000000000000
+          Left = 559.370440000000000000
           Width = 98.267780000000000000
           Height = 18.897650000000000000
           ShowHint = False
@@ -383,7 +383,7 @@ object FKaryawan: TFKaryawan
         end
       end
       object MasterData1: TfrxMasterData
-        Height = 22.677180000000000000
+        Height = 18.897650000000000000
         Top = 185.196970000000000000
         Width = 740.409927000000000000
         DataSet = frxDBDataset1
@@ -396,8 +396,15 @@ object FKaryawan: TFKaryawan
           DataField = 'id_karyawan'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             '[frxDBDataset1."id_karyawan"]')
+          ParentFont = False
         end
         object frxDBDataset1id_user: TfrxMemoView
           Left = 79.370130000000000000
@@ -407,8 +414,15 @@ object FKaryawan: TFKaryawan
           DataField = 'id_user'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             '[frxDBDataset1."id_user"]')
+          ParentFont = False
         end
         object frxDBDataset1nik: TfrxMemoView
           Left = 158.740260000000000000
@@ -418,8 +432,15 @@ object FKaryawan: TFKaryawan
           DataField = 'nik'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             '[frxDBDataset1."nik"]')
+          ParentFont = False
         end
         object frxDBDataset1nama: TfrxMemoView
           Left = 238.110390000000000000
@@ -429,30 +450,51 @@ object FKaryawan: TFKaryawan
           DataField = 'nama'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             '[frxDBDataset1."nama"]')
+          ParentFont = False
         end
         object frxDBDataset1jk: TfrxMemoView
-          Left = 464.882190000000000000
+          Left = 472.441250000000000000
           Width = 86.929190000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'jk'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             '[frxDBDataset1."jk"]')
+          ParentFont = False
         end
         object frxDBDataset1tgl_lahir: TfrxMemoView
-          Left = 563.149970000000000000
+          Left = 559.370440000000000000
           Width = 98.267780000000000000
           Height = 18.897650000000000000
           ShowHint = False
           DataField = 'tgl_lahir'
           DataSet = frxDBDataset1
           DataSetName = 'frxDBDataset1'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Height = -13
+          Font.Name = 'Arial'
+          Font.Style = []
+          Frame.Typ = [ftLeft, ftRight, ftTop, ftBottom]
           Memo.UTF8 = (
             '[frxDBDataset1."tgl_lahir"]')
+          ParentFont = False
         end
       end
     end

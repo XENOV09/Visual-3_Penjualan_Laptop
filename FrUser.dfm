@@ -1,6 +1,6 @@
 object FUser: TFUser
-  Left = 602
-  Top = 107
+  Left = 307
+  Top = 219
   Width = 971
   Height = 196
   Caption = 'FUser'
@@ -152,7 +152,7 @@ object FUser: TFUser
     PrintOptions.Printer = 'Default'
     PrintOptions.PrintOnSheet = 0
     ReportOptions.CreateDate = 45115.654411006900000000
-    ReportOptions.LastChange = 45258.748646585600000000
+    ReportOptions.LastChange = 45258.825014629630000000
     ScriptLanguage = 'PascalScript'
     ScriptText.Strings = (
       'begin'
@@ -195,7 +195,7 @@ object FUser: TFUser
           Font.Name = 'Arial'
           Font.Style = []
           Memo.UTF8 = (
-            'LAPORAN SUPPLIER')
+            'LAPORAN USER')
           ParentFont = False
         end
       end

@@ -19,21 +19,25 @@ object FUtama: TFUtama
     Top = 16
     object K1: TMenuItem
       Caption = 'Menu'
-      object Supplier1: TMenuItem
-        Caption = 'Supplier'
-        OnClick = Supplier1Click
-      end
-      object Karyawan1: TMenuItem
-        Caption = 'Karyawan'
-        OnClick = Karyawan1Click
-      end
       object User1: TMenuItem
         Caption = 'User'
         OnClick = User1Click
       end
+      object Supplier1: TMenuItem
+        Caption = 'Supplier'
+        OnClick = Supplier1Click
+      end
+      object Laptop1: TMenuItem
+        Caption = 'Laptop'
+        OnClick = Laptop1Click
+      end
       object Pelanggan1: TMenuItem
         Caption = 'Pelanggan'
         OnClick = Pelanggan1Click
+      end
+      object Karyawan1: TMenuItem
+        Caption = 'Karyawan'
+        OnClick = Karyawan1Click
       end
     end
   end
