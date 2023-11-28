@@ -82,6 +82,8 @@ object FLogin: TFLogin
   object ZQ1: TZQuery
     Connection = Zcon
     Params = <>
+    Properties.Strings = (
+      'select * from user')
     Left = 176
     Top = 208
   end

@@ -29,6 +29,8 @@ var
 
 implementation
 
+uses FrUtama;
+
 {$R *.dfm}
 
 procedure TFLogin.Button1Click(Sender: TObject);
@@ -50,7 +52,7 @@ Application.MessageBox('Password salah!','ERROR',MB_OK or MB_ICONERROR)
 else
 begin
 Application.MessageBox('LOGIN BERHASIL','INFORMASI',MB_OK or MB_ICONINFORMATION);
-//Menu_utama.Show;
+FUtama.Show;
 end;
 end;
 hide;
