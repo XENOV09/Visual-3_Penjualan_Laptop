@@ -27,6 +27,10 @@ object FUtama: TFUtama
         Caption = 'Karyawan'
         OnClick = Karyawan1Click
       end
+      object User1: TMenuItem
+        Caption = 'User'
+        OnClick = User1Click
+      end
     end
   end
 end
