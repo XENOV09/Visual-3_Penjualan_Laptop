@@ -8,7 +8,8 @@ uses
   FrKaryawan in 'FrKaryawan.pas' {FKaryawan},
   FrUser in 'FrUser.pas' {FUser},
   FrPelanggan in 'FrPelanggan.pas' {FPelanggan},
-  FrLaptop in 'FrLaptop.pas' {FLaptop};
+  FrLaptop in 'FrLaptop.pas' {FLaptop},
+  FrTransaksi in 'FrTransaksi.pas' {FTransaksi};
 
 {$R *.res}
 
@@ -21,5 +22,6 @@ begin
   Application.CreateForm(TFUser, FUser);
   Application.CreateForm(TFPelanggan, FPelanggan);
   Application.CreateForm(TFLaptop, FLaptop);
+  Application.CreateForm(TFTransaksi, FTransaksi);
   Application.Run;
 end.

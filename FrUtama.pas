@@ -15,11 +15,13 @@ type
     User1: TMenuItem;
     Pelanggan1: TMenuItem;
     Laptop1: TMenuItem;
+    ransaksi1: TMenuItem;
     procedure Supplier1Click(Sender: TObject);
     procedure Karyawan1Click(Sender: TObject);
     procedure User1Click(Sender: TObject);
     procedure Pelanggan1Click(Sender: TObject);
     procedure Laptop1Click(Sender: TObject);
+    procedure ransaksi1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,7 +33,7 @@ var
 
 implementation
 
-uses FrSupplier, FrKaryawan, FrUser, FrPelanggan, FrLaptop;
+uses FrSupplier, FrKaryawan, FrUser, FrPelanggan, FrLaptop, FrTransaksi;
 
 {$R *.dfm}
 
@@ -58,6 +60,11 @@ end;
 procedure TFUtama.Laptop1Click(Sender: TObject);
 begin
 FLaptop.showmodal;
+end;
+
+procedure TFUtama.ransaksi1Click(Sender: TObject);
+begin
+FTransaksi.showmodal;
 end;
 
 end.
